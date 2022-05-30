@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: pgdb
+    image: 'postgres:12'
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=lajcik
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=defaultdb
+    volumes:
+      - pgdata1:/var/lib/postgresql/data
+
+volumes:
+  pgdata1: {}
