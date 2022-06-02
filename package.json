@@ -4,7 +4,7 @@
   "description": "Application for creating simple crypto wallet balans calculations",
   "main": "dist/src/index.js",
   "scripts": {
-    "clean": "rimraf dist & rimraf tsconfig.tsbuildinfo",
+    "prebuild": "rimraf dist & rimraf tsconfig.tsbuildinfo",
     "test": "coming soon",
     "build": "tsc",
     "start": "node dist/src/index.js",

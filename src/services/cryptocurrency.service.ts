@@ -10,7 +10,9 @@ interface Cryptocourrency {
   symbol: string;
 }
 
-const getCryptoPositionBySymbol = async (symbol: string): Promise<Cryptocourrency> => {
+const getCryptoPositionBySymbol = async (
+  symbol: string
+): Promise<Cryptocourrency> => {
   const [cryptocourrency] = await knex<Cryptocourrency>('cryptocurrency')
     .select('id', 'symbol')
     .where('symbol', symbol)
@@ -28,7 +30,10 @@ const getCryptoPositionById = async (id: number): Promise<Cryptocourrency> => {
   return cryptocourrency;
 };
 
-export const deleteCryptoPosition = async (req: Request, res: Response): Promise<void> => {
+export const deleteCryptoPosition = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
   res.status(204).send();
 };
 
