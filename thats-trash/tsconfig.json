@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "lib": ["es2020"],
+    "target": "es2020",
+    "moduleResolution": "node",
     "module": "commonjs",
     "rootDir": ".",
     "outDir": "./dist",
@@ -8,7 +10,10 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "types": [
+      "reflect-metadata"
+    ]
   },
   "include": ["src"],
   "exclude": ["node_modules"]

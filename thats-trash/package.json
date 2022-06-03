@@ -26,7 +26,8 @@
     "joi-extract-type": "^15.0.8",
     "knex": "^2.1.0",
     "morgan": "^1.10.0",
-    "pg": "^8.7.3"
+    "pg": "^8.7.3",
+    "typedi": "^0.10.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",

@@ -1,3 +1,7 @@
+# Oh wow...
+
+Upon recent research I found out that this code is trash, so I need to start over.
+
 # Why? What? Where?
 
 App for collecting crypto transactions, calcualating pnl and other activiteis but it is still a mess.

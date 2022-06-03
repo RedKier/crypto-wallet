@@ -6,7 +6,7 @@ import {
   createCryptoPosition,
   getCryptoPositionsList,
 } from '../services/cryptocurrency.service';
-import { asyncHandler } from '../utils/async.util';
+import { asyncHandler } from '../utils';
 import { createCryptocourrencySchema } from '../validatorSchemas/cryptocourrencyCreate.schema';
 
 const validator = createValidator();
